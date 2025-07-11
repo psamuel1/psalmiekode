@@ -9,12 +9,19 @@ body {
   background-image: url(asset/Rectangle\ 599.png);
   font-family: poppins;
 }
-
-nav {
+.hero {
   width: 100%;
-  height: 10%;
+  /* height: 100vh; */
+}
+.logo img {
+  width: 55px;
+}
+nav {
   display: flex;
   align-content: space-between;
+  width: 100%;
+  height: 10%;
+  padding-top: 10px;
 }
 .nav {
   margin: 25px 0 15px 25px;
@@ -32,17 +39,19 @@ nav ul {
 
 .works {
   margin-left: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .company {
   margin-left: 15px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .features select {
   border: none;
+  font-weight: 600;
 }
 .works select {
   border: none;
+  font-weight: 600;
 }
 .buttons {
   display: flex;
@@ -55,144 +64,180 @@ button {
   background: transparent;
 }
 .login {
+  position: relative;
   margin-right: 5px;
   width: 140px;
-  border-radius: 20px;
+  /* height: 40px; */
+  border-radius: 15px;
   background-color: hsla(126, 100%, 90%, 1);
   font-size: larger;
   text-align: center;
+
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.logb {
+  font-weight: 700;
+  margin: 15px;
 }
 .signup {
   background-color: hsla(174, 63%, 40%, 1);
   font-size: larger;
   margin-left: 35px;
   width: 140px;
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.signb {
+  font-weight: 700;
+  margin: 15px;
 }
 .container {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  padding-bottom: 175px;
   /* overflow: hidden; */
 }
 .intro {
-  width: 60%;
+  width: 65%;
   font-family: poppins;
   font-size: 30px;
   font-weight: 600;
-  padding-top: 55px;
+  margin-top: 25px;
+  padding-top: 45px;
   padding-left: 35px;
+  padding-right: 55px;
+  margin-right: 70px;
 }
 .intro h1 {
-  font-size: 55px;
-  font-weight: 700;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 100%;
+  font-style: extra-bold;
 }
 .low {
-  font-weight: 500;
-  font-size: smaller;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: semibold;
+
+  /* font-size: smaller; */
 }
 .gogle {
-  margin-top: 45px;
-  padding-left: 35px;
+  margin-top: 60px;
+  padding-left: 5px;
 }
 .gogle img {
   width: 400px;
 }
 .laptop {
   position: relative;
-  width: 40%;
-  height: 80vh;
+  width: 30%;
+  height: 88vh;
   background-color: hsla(126, 100%, 90%, 1);
   border-radius: 190px 0 0 0;
-
-  margin-top: 55px;
-  margin-left: 300px;
+  padding-top: 75px;
+  margin-top: 75px;
+  /* margin-left: 300px; */
 }
 .laptop img {
   position: absolute;
-  max-width: 750px;
-
-  top: -156px;
-  left: -350px;
+  max-width: 650px;
+  top: -56px;
+  left: -250px;
   z-index: 9999;
 }
 
 .next_page {
-  background-image: url(asset/Rectangle\ 610.png);
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100vh;
-  background-size: cover;
-  position: relative;
+  padding-bottom: 110px;
+  /* height: fit-content; */
+  /* position: relative; */
   display: flex;
+  /* z-index: 1; */
 }
 .half {
-  position: relative;
-  width: 28%;
-  height: 75vh;
+  /* position: relative; */
+  width: 31.5%;
+  height: 85%;
   background: hsla(174, 63%, 40%, 1);
-  border-radius: 0 0 140px 0;
-  top: 38px;
+  border-radius: 0 0 180px 0;
+  /* top: 38px; */
 }
 .half img {
-  width: 450px;
-  margin-top: 25px;
+  width: 470px;
+  margin-top: 70px;
 }
 .half2 {
-  position: relative;
-  width: 65%;
+  /* position: relative; */
+  width: 68%;
   height: 100vh;
-  top: 68px;
-  margin-left: 155px;
+  /* top: 28px; */
+  margin-left: 85px;
 }
 .our {
   font-family: poppins;
-  font-weight: 600;
-  font-size: 55px;
+  font-weight: 700;
+  font-size: 48px;
 }
 .features_info {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 .income {
   background: hsla(126, 100%, 90%, 1);
-  width: 30%;
-  height: 30vh;
+  width: 35%;
+  height: 45vh;
   border-radius: 15px;
-  margin: 25px;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 55px;
   padding: 20px;
 }
 .visual {
   background: hsla(174, 63%, 40%, 1);
-  width: 30%;
-  height: 30vh;
+  width: 35%;
+  height: 45vh;
   border-radius: 15px;
-  margin: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-left: 55px;
   /* text-align: center; */
   padding: 20px;
 }
 .financial {
   background: hsla(126, 100%, 90%, 1);
-  width: 30%;
-  height: 30vh;
+  width: 35%;
+  height: 45vh;
   border-radius: 15px;
-  margin: 25px;
+  margin-top: 30px;
+  margin-right: 25px;
+  margin-left: 55px;
   /* text-align: center; */
   padding: 20px;
 }
 .fea_p {
-  font-size: small;
+  font-size: 20px;
+  font-style: medium;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.fea {
+  width: 70px;
+  height: 70px;
+  /* margin: 15px; */
 }
 .smart {
   background: hsla(174, 63%, 40%, 1);
-  width: 30%;
-  height: 30vh;
+  width: 35%;
+  height: 45vh;
   border-radius: 15px;
-  margin: 25px;
-
+  margin-top: 30px;
+  margin-right: 55px;
+  margin-left: 25px;
   padding: 20px;
 }
 .smart_text {
@@ -209,6 +254,7 @@ button {
   margin-bottom: 10px;
 }
 .how_it_works {
+  margin-top: 45px;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -277,14 +323,14 @@ button {
   align-content: center;
   margin-left: 25px;
 }
-.fea {
-  width: 30px;
-  height: 30px;
-}
+
 .income_text {
-  font-size: larger;
+  font-size: 25px;
   margin-bottom: 10px;
   line-height: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  font-weight: 700;
 }
 .phone {
   width: 70%;
@@ -296,14 +342,14 @@ button {
   position: relative;
   justify-content: center;
   align-items: center;
+  padding-bottom: 200px;
 }
 .phone img {
   position: relative;
-  /* width: 500px; */
+  width: 500px;
   height: 80vh;
   top: -90px;
-
-  /* padding-bottom: 450px; */
+  margin-left: 170px;
 }
 .top3 {
   position: relative;
@@ -351,13 +397,13 @@ button {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
-  /* z-index: 9999; */
-  /* left: 150px; */
+  z-index: 1;
+  left: 50px;
 }
 .m2 {
   position: relative;
   width: 100%;
-  height: 65vh;
+  height: 70vh;
   background: hsla(174, 63%, 40%, 1);
   border-radius: 25px;
   padding: 25px;
@@ -365,6 +411,7 @@ button {
   justify-items: center;
   align-content: center;
   top: -50px;
+  z-index: 3;
 }
 .m3 {
   position: relative;
@@ -375,8 +422,9 @@ button {
   /* margin: 25px; */
   justify-items: center;
   align-content: center;
-  z-index: 1;
+  z-index: 2;
   /* padding: 25px; */
+  right: 50px;
 }
 .testimonial-text {
   font-size: 20px;
@@ -422,12 +470,12 @@ button {
 }
 .upperfaq {
   position: relative;
-  width: 35%;
-  height: 65vh;
+  width: 40%;
+  height: 70vh;
   background: hsla(126, 100%, 90%, 1);
-  border-radius: 0 0 140px 0;
+  border-radius: 0 0 200px 0;
   top: -8px;
-  z-index: 9999;
+  /* z-index: 9999; */
 }
 .faq-section h2 {
   font-weight: bold;
@@ -447,7 +495,7 @@ button {
   padding: 20px;
   border-radius: 15px;
   width: fit-content;
-  width: 50%;
+  width: 70%;
   height: 70vh;
   margin-top: 60px;
   margin-left: 99px;
@@ -494,10 +542,13 @@ footer {
 }
 .track {
   margin-top: 15px;
+  font-size: 27px;
+  font-weight: 500;
 }
 .foot_text {
-  font-size: 25px;
+  font-size: 43px;
   color: white;
+  font-weight: 600;
 }
 .socials {
   display: flex;
@@ -507,6 +558,8 @@ footer {
 }
 .google {
   justify-items: center;
+  align-items: center;
+  margin-left: 130px;
 }
 .google img {
   margin-top: 20px;
@@ -515,7 +568,8 @@ footer {
 .support {
   color: white;
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+  font-weight: 600;
 }
 .support img {
   color: white;
